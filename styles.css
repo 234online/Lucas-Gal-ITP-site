@@ -706,11 +706,11 @@ footer {
     }
 
     .about-photo {
-        max-width: 60vw;
+        max-width: 70vw;
     }
 
     .about-photo[data-status="before"] {
-        transform: translate(-60vw);
+        transform: translate(-70vw);
     }
 
     .about-photo[data-status="active"] {
@@ -718,7 +718,7 @@ footer {
     }
 
     .about-photo[data-status="after"] {
-        transform: translate(60vw);
+        transform: translate(70vw);
     }
 
     .faq-title {
