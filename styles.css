@@ -82,7 +82,7 @@ body {
 .navbar-container {
     position: absolute;
     background: #576375;
-    right: 10%;
+    right: 5%;
     top: 0;
     height: 100px;
     overflow-y: hidden;
@@ -207,12 +207,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    overflow: visible;
-}
-
-#about-us {
-    position: absolute;
-    top: -130px;
     overflow: visible;
 }
 
@@ -669,6 +663,7 @@ footer {
     .navbarItem {
         font-size: clamp(10px, 1vw, 16px);
         padding-left: clamp(15px, 1.5vw, 20px);
+        padding-right: clamp(15px, 1.5vw, 20px);
     }
 
     .image-section {
@@ -692,20 +687,21 @@ footer {
     }
 
     .about-text {
-        width: 80%;
+        width: 100%;
         text-align: center;
-        left: 0;
+        left: -15%;
     }
 
     .about-gallery {
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
         height: 70vw;
     }
 
     .photos {
-        max-width: 60vw;
-        max-height: 45vw;
+        top: 5vw;
+        max-width: 70vw;
+        max-height: 55vw;
         overflow: hidden;
     }
 
@@ -762,14 +758,21 @@ footer {
         left: 0vw;
     }
 
+    .program-table {
+        width: 100%;
+        grid-template-columns: 44% repeat(2, 22%);
+        left: 6%;
+    }
+
     .program-item {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     .price-title {
         text-align: center;
         font-size: 6vw;
         left: 0;
+        padding-bottom: 3vw;
     }
 
     .price-box {
@@ -807,10 +810,15 @@ footer {
         padding-bottom: 4vw;
     }
 
+    .location-text {
+        padding: 5vw;
+    }
+
     .map {
         margin: 0 auto;
         left: 0;
         width: 80vw;
+        padding: 2vw;
     }
 
     .contact-us-title {
