@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Inspectie Tehnica Periodica, ITP, Lucas Gal ITP, ITP Caransebes, Caransebes, caransebes, programare ITP, ITP Caras-Severin, Caras-Severin">
+    <meta name="description" content="Programează-ți un ITP cu Lucas Gal ITP Caransebeș!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCAS GAL ITP</title>
+    <link rel="icon" type="image/x-icon" href="icons/lucas-gal-itp-drawing.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbarItem"></div>
+            <img src="svg/logo.svg" class="logo">
+            <div class="navbar-container">
+                <a href="#about-us" class="navbarItem">Despre Noi</a>
+                <a href="#faq" class="navbarItem">Întrebări Frecvente</a>
+                <a href="#program" class="navbarItem">Program</a>
+                <a href="#price" class="navbarItem">Prețuri</a>
+                <a href="#contact-us" class="navbarItem">Contactează<span style="font-family:'Times New Roman', Times, serif; font-weight: 300">-</span>ne</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="image-section">
+            <div class="transparent-cover"></div>
+            <div class="slogan-box">
+                <div class="slogan">Siguranța ta începe</div>
+                <div class="slogan">cu un <u>ITP prompt</u></div>
+            </div>
+        </div>
+        <div class="about-us">
+            <div id="about-us"></div>
+            <div class="about-text">
+                <div class="blur-effect"></div>
+                <h1 class="about-title">Despre noi</h1>
+                <p class="about-information">Lucas Gal ITP S.R.L. vă oferă servicii profesionale de Inspecție Tehnică Periodică (ITP) în Caransebeș, 
+                    într-un mediu modern și bine echipat. Punem accent pe seriozitate, promptitudine și calitatea serviciilor, astfel încât 
+                    fiecare client să beneficieze de o verificare corectă și sigură a vehiculului.</p>
+                <p class="about-information">Stația este autorizată pentru vehicule rutiere de clasa a II-a cu MTMA de până la 3500 kg inclusiv, 
+                    având înălțime maximă de 3,05 m, lungime maximă de 6,9 m și distanță minimă între fețele interioare ale anvelopelor de 1 m.</p>
+                <p class="about-information">La Lucas Gal SRL, ne dorim ca fiecare client să plece mulțumit, având certitudinea că autovehiculul 
+                    său a fost verificat cu atenție și profesionalism.</p>
+            </div>
+            <div class="about-gallery">
+                <div>
+                    <button class="button" onclick="handleLeft()"><img src="svg/left-arrow.svg" id="left-arrow"></img></button>
+                    <button class="button" onclick="handleRight()"><img src="svg/right-arrow.svg" id="right-arrow"></img></button>
+                </div>
+                <div class="photos">
+                    <img src="images/truck-building.jpeg" class="about-photo" data-index="0" data-status="active">
+                    <img src="images/place-of-work.jpeg" class="about-photo hidden-photo" data-index="1" data-status="after">
+                    <img src="images/interior.jpeg" class="about-photo hidden-photo" data-index="2" data-status="unknown">
+                    <img src="images/studio.jpeg" class="about-photo hidden-photo" data-index="3" data-status="unknown">
+                    <img src="images/entrance.jpeg" class="about-photo hidden-photo" data-index="4" data-status="before">
+                </div>
+            </div>
+        </div>
+        <div class="faq" id="faq">
+            <div class="faq-title">Întrebări frecvente despre ITP</div>
+            <div class="faq-box">
+                <div class="faq-container">
+                    <img src="svg/arrow-dropdown.svg" class="arrow-dropdown" onclick="handleDropdown(1)" data-index="question-1">
+                    <div class="faq-question" onclick="handleDropdown(1)">De ce este necesar ITP-ul?</div>
+                    <div class="faq-answer" data-index="answer-1">Inspecția Tehnică Periodică (ITP) îi oferă inspectorului autorizat posibilitatea de a 
+                        depista eventualele defecțiuni sau semne de uzură care ar putea afecta siguranța șoferului, a pasagerilor și 
+                        a celorlalți participanți la trafic. Efectuarea regulată a ITP-ului contribuie la reducerea semnificativă a riscului 
+                        de accidente provocate de probleme tehnice. În același timp, această verificare urmărește și respectarea normelor de 
+                        mediu, ajutând la limitarea emisiilor poluante generate de autoturism.</div>
+                </div>
+                <div class="faq-container">
+                    <img src="svg/arrow-dropdown.svg" class="arrow-dropdown" onclick="handleDropdown(2)" data-index="question-2"> 
+                    <div class="faq-question" onclick="handleDropdown(2)">Ce acte sunt necesare pentru ITP?</div>
+                    <div class="faq-answer" data-index="answer-2">Pentru efectuarea Inspecției Tehnice Periodice (ITP) este necesară prezentarea următoarelor documente:
+                        <ul>
+                            <li>Certificatul de înmatriculare al autovehiculului (talonul) – pentru a confirma că vehiculul este înmatriculat și poate circula legal.</li>
+                            <li>Cartea de identitate a vehiculului (CIV) – document care conține datele tehnice și caracteristicile autovehiculului.</li>
+                            <li>Polița de asigurare RCA valabilă – pentru a demonstra existența unei asigurări de răspundere civilă auto.</li>
+                            <li>Actul de identitate al persoanei care prezintă vehiculul la ITP – deoarece mașina poate fi adusă la inspecție de orice persoană, nu neapărat de proprietar.</li>
+                            <li>Licența de transport (pentru autovehicule comerciale) – necesară doar în cazul vehiculelor utilizate pentru activități comerciale.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <img src="svg/arrow-dropdown.svg" class="arrow-dropdown" onclick="handleDropdown(3)" data-index="question-3"> 
+                    <div class="faq-question" onclick="handleDropdown(3)">La cât timp se face ITP-ul?</div>
+                    <div class="faq-answer" data-index="answer-3">Intervalele de efectuare a ITP-ului pentru autoturisme diferă în funcție de vechimea vehiculului:
+                        <ul>
+                            <li>Mașini noi (sub 3 ani vechime): prima inspecție se face la 3 ani de la data primei înmatriculări.</li>
+                            <li>Mașini cu vechime între 3 și 12 ani: ITP-ul se efectuează la fiecare 2 ani.</li>
+                            <li>Mașini cu vechime peste 12 ani: ITP-ul se efectuează anual.</li>
+                            <li>Excepție fac vehiculele folosite în regim de transport persoane, așa cum este exemplul taximetrelor, care sunt obligate să efectueze ITP-ul la fiecare 6 luni.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <img src="svg/arrow-dropdown.svg" class="arrow-dropdown" onclick="handleDropdown(4)" data-index="question-4"> 
+                    <div class="faq-question" onclick="handleDropdown(4)">Ce să verifici la mașină înainte de ITP?</div>
+                    <div class="faq-answer" data-index="answer-4">Pentru a trece fără probleme Inspecția Tehnică Periodică (ITP), este recomandat să 
+                        verifici din timp câteva componente importante ale autoturismului:
+                        <ul>
+                            <li><b>Luminile și semnalele</b> – verifică dacă farurile, stopurile, semnalizatoarele și luminile de poziție funcționează corespunzător și sunt vizibile.</li>
+                            <li><b>Sistemul de frânare</b> – controlează starea plăcuțelor și a discurilor de frână pentru a te asigura că sistemul de frânare funcționează corect și eficient.</li>
+                            <li><b>Emisiile poluante</b> – inspectează sistemul de evacuare pentru a vedea dacă există crăpături, scurgeri sau alte defecțiuni care ar putea duce la creșterea nivelului de emisii.</li>
+                            <li><b>Suspensia și direcția</b> – fii atent la eventuale zgomote neobișnuite, vibrații sau probleme la manevrarea volanului, deoarece acestea pot indica defecțiuni ale suspensiei sau direcției.</li>
+                            <li><b>Anvelopele</b> – verifică dacă anvelopele sunt în stare bună, cu uzură uniformă și cu o adâncime suficientă a benzii de rulare.</li>
+                            <li><b>Nivelul lichidelor</b> – asigură-te că lichidul de răcire, uleiul de motor și lichidul de frână se află la nivelurile recomandate.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="program" id="program">
+            <div class="program-title">Program de Lucru</div>
+            <div class="program-table">
+                <div class="program-item"></div> <div class="program-item">Deschis</div> <div class="program-item">Pauză de masă</div>
+                <div class="program-item">Luni - Vineri</div> <div class="program-item">09:00 - 18:00</div> <div class="program-item">12:00 - 13:00</div>
+                <div class="program-item">Sămbătă - Duminică</div> <div class="program-item">09:00 - 14:00</div>
+            </div>
+        </div>
+        <div class="price" id="price">
+            <div class="price-title">Prețuri verificare ITP</div>
+            <div class="price-box">
+                <div class="price-tag">
+                    <div class="item-title">Autoturism</div>
+                    <div class="item-space"></div>
+                    <div class="item-price">200 RON</div>
+                </div>
+                <div class="price-tag">
+                    <div class="item-title">Autoutilitare</div>
+                    <div class="item-space"></div>
+                    <div class="item-price">300 RON</div>
+                </div>
+                <div class="price-tag">
+                    <div class="item-title">Auto în regim taxi</div>
+                    <div class="item-space"></div>
+                    <div class="item-price">100 RON</div>
+                </div>
+                <div class="price-tag">
+                    <div class="item-title">Auto în regim școală</div>
+                    <div class="item-space"></div>
+                    <div class="item-price">100 RON</div>
+                </div>
+                <div class="price-tag">
+                    <div class="item-title">Tarife revenire la toate categoriile</div>
+                    <div class="item-space"></div>
+                    <div class="item-price">0 RON</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text">Programează ITP-ul la Lucas Gal ITP S.R.L.!</div>
+        <div class="footer-box">
+            <div class="location" id="location">
+                <div class="location-title">Unde ne găsești</div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1090.0579639171194!2d22.196803786053014!3d45.426016397866725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474e3222e1accf17%3A0x2dc89fbbedfdf917!2sCalea%20Timi%C8%99oarei%2050%2C%20325400%20Caransebe%C8%99!5e0!3m2!1sro!2sro!4v1773181288577!5m2!1sro!2sro" width="450" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                <div class="location-text">Caransebeș, Str. Calea Timișoarei, nr. 50</div>
+            </div>
+            <div class="contact-us" id="contact-us">
+                <div class="contact-us-title">Contactează<span style="font-family:'Times New Roman', Times, serif; font-weight: 300">-</span>ne</div>
+                <div class="contact-information">Nr. telefon: <a href=tel:0764460345>0764460345</a></div>
+                <div class="contact-information">E-mail: <a href="mailto:ghiorghioniadrian@yahoo.com">ghiorghioniadrian@yahoo.com</a></div>
+                <div class="contact-information"><a href="https://www.facebook.com/adrian.ghiorghioni" target="_blank"><img src="svg/facebook-icon.svg"></a></div>
+                <div class="contact-information">Reprezentant Legal:</div>
+                <div class="contact-information">Ghiorghioni Adrian Lucian</div>
+            </div>
+        </div>
+        <div style="height: 100px; background-color: #45505E"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
